@@ -45,11 +45,11 @@ Model-View-ViewModel (MVVM) is a software design pattern that is structured to s
 
 * View
 
-View is represented by the UIView or UIViewController objects which should only display prepared data.
+View is represented by the UIView or UIViewController objects which should only display prepared data. Also View has a corresponding ViewModel to expose required fuctionality(Ex. [DeliveryCellViewModel](Delivery/Modules/Delivery/ViewModels/DeliveryCellViewModel.swift)).
 
 * ViewModel
 
-ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes. Each model has a corresponding ViewModel to expose required fuctionality.
+ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes.
 
 * Model
 
