@@ -44,12 +44,15 @@ Model-View-ViewModel (MVVM) is a software design pattern that is structured to s
 <img src="Screenshots/MVVM.png" alt="MVVM" />
 
 * View
+
 View is represented by the UIView or UIViewController objects, accompanied with their .xib and .storyboard files, which should only display prepared data. (We don’t want to have NSDateFormatter code, for example, inside the View.)
 
 * ViewModel
+
 ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes. All of these are hidden behind a well-defined API modeled to fit this particular View.
 
 * Model
+
 It simply holds the data and has nothing to do with any of the business logic.
 
 ## Built With
