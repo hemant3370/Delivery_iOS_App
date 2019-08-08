@@ -1,0 +1,36 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Runs Tests"
+  lane :tests do
+  run_tests(
+	devices: ["iPhone X"],
+	scheme: "DeliveryTests")
+end
+  desc "Take screenshots"
+  lane :screenshots do
+  capture_screenshots
+end
+  desc "Run Lint"
+  lane :lint do
+  swiftlint(
+  config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
+  ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a  non-zero exit status
+)
+end
+end
