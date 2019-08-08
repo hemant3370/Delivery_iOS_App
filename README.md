@@ -49,11 +49,13 @@ View is represented by the UIView or UIViewController objects which should only 
 
 * ViewModel
 
-ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes. All of these are hidden behind a well-defined API modeled to fit a particular View.
+ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes. Each model has a corresponding ViewModel to expose required fuctionality.
 
 * Model
-
 It simply holds the data and has nothing to do with any of the business logic.
+
+* Router
+Router handles all the routing logic and thus separates this concerns from the View.
 
 ## Built With
 
