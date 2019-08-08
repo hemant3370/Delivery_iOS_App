@@ -3,8 +3,9 @@ An iOS app to show deliveries to be made as a list and address details on a Map.
 
 ## Getting Started
 
-Install cocoapods and run pod install in the project directory for a quick setup.
+[Install cocoapods](https://guides.cocoapods.org/using/getting-started.html) and run pod install in the project directory for a quick setup.
 ```
+pod repo update
 pod install
 ```
 ## Fastlane Setup and Documentation
