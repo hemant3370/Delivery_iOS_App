@@ -3,8 +3,9 @@ An iOS app to show deliveries to be made as a list and address details on a Map.
 
 ## Getting Started
 
-Install cocoapods and run pod install in the project directory for a quick setup.
+[Install cocoapods](https://guides.cocoapods.org/using/getting-started.html) and run pod install in the project directory for a quick setup.
 ```
+pod repo update
 pod install
 ```
 ## Fastlane Setup and Documentation
@@ -41,6 +42,22 @@ SwiftLint is used to enforce Swift style and conventions.
 
 Model-View-ViewModel (MVVM) is a software design pattern that is structured to separate program logic and user interface controls.
 <img src="Screenshots/MVVM.png" alt="MVVM" />
+
+* View
+
+View is represented by the UIView or UIViewController objects which should only display prepared data.
+
+* ViewModel
+
+ViewModel hides all asynchronous networking code, data preparation code for visual presentation, and code listening for Model changes.
+
+* Model
+
+It simply holds the data and has nothing to do with any of the business logic.
+
+* Router
+
+Router handles all the routing logic and thus separates this concerns from the View.
 
 ## Built With
 
