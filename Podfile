@@ -10,7 +10,7 @@ target 'Delivery' do
 
   # Pods for Delivery
   pod 'SwiftLint', '0.34.0'
-  pod 'Kingfisher', '5.0'
+  pod 'Kingfisher', '5.7.1'
   pod 'Moya', '13.0.1'
   pod 'SnapKit', '5.0.0'
   pod 'Toast-Swift', '5.0.0'
